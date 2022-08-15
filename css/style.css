@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* 
+COLOR PALETTE
+
+#E5E5E5 bg
+#343A40 font
+#495057 font
+#D8DFE8 bg-button
+#0a3871 bg-button font 
+
+*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e5e5e5;
+
+  color: #0a3871;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #d8dfe8;
+}
+.logo {
+  padding-top: 5px;
+  width: 16px;
+}
+
+.title {
+  font-size: 2em;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  justify-content: space-between;
+  padding: 2em 8em;
+}
+
+.container-insert-msg,
+.container-result-msg {
+  height: 100%;
+  width: 70vh;
+  background: #e5e5e5;
+}
+
+.container-result-msg {
+  background: #fff;
+  border-radius: 2em;
+  width: 40vh;
+}
+textarea:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {  
+  color: #0a3871;
+}
+
+textarea,
+.result-msg {
+  background-color: #e5e5e5;
+  width: 90%;
+  height: 60vh;
+  font-size: 1.2em;
+  resize: none;
+  padding: 20px;
+  border: none;
+}
+
+.result-msg {
+  background-color: #fff;
+}
+
+.advice {
+  height: 2em;
+  padding-left: 5vw;
+  font-size: 0.7em;
+}
+
+li::before {
+  content: url(../img/advice.png);
+  padding-right: 0.5em;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.button,
+.button-decrypt {
+  width: 13em;
+  height: 3.5em;
+  border: 1px solid #0a3871;
+  border-radius: 1.2em;
+  background: #0a3871;
+  color: #fff;
+}
+
+.button-decrypt {
+  background: #d8dfe8;
+  color: #0a3871;
+}
+
+.img-bg-result-msg {
+  display: flex;
+  align-items: center;
+  height: 84%;
+  flex-wrap: wrap;
+}
+
+.msg-text-result {
+  display: none;
+  height: 63vh;
+  font-size: 1.2em;
+  resize: none;
+  padding: 20px;
+  border: none;
+}
+
+.no-txt-info {
+  padding: 0 2em;
+  text-align: center;
+}
+
+.no-txt-info h2 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.no-txt-info p {
+  font-size: 0.7em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #d8dfe8;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0a3871;
+}
