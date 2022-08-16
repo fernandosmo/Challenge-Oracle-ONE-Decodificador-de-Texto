@@ -76,13 +76,14 @@ textarea,
 }
 
 .result-msg {
+  height: 65vh;
   background-color: #fff;
   box-sizing: border-box;
 }
 
 .advice {
   height: 2em;
-  padding-left: 5vw;
+  padding:1vh 5vw;
   font-size: 0.7em;
 }
 
@@ -276,6 +277,10 @@ footer a {
     height: 50%;
   }
 
+  .container-insert-msg {
+    height: 40vh;
+  }
+
   .container-result-msg {
     font-size: 1.2em;
   }
@@ -283,5 +288,9 @@ footer a {
   .msg-text-result {
     
     height: auto;
+  }
+
+  .no-txt-info {
+    font-size: 1em;
   }
 }
