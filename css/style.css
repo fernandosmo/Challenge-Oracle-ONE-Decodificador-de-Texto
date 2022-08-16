@@ -23,8 +23,8 @@ header {
   background-color: #d8dfe8;
 }
 .logo {
-  padding-top: 5px;
-  width: 16px;
+  padding-top: 0.8em;
+  width: 1em;
 }
 
 .title {
@@ -39,23 +39,24 @@ main {
   padding: 2vh 8vw;
 }
 
-.container-insert-msg,
-.container-result-msg {
-  height: 100%;
-  width: 70vh;
+.container-insert-msg {
+  height: 80vh;
+  width: 90%;
   background: #e5e5e5;
 }
 
 .container-result-msg {
+  height: 80vh;
   background: #fff;
   border-radius: 2em;
   width: 40vh;
+  box-shadow: 0 1.5em 2em -0.5em rgba(0, 0, 0, 0.08);
 }
 textarea:focus {
   outline: none;
 }
 
-::-webkit-input-placeholder {  
+::-webkit-input-placeholder {
   color: #0a3871;
   font-family: 'Poppins', sans-serif;
   font-size: 1.2em;
@@ -104,8 +105,9 @@ li::before {
 }
 
 .button-crypt,
-.button-decrypt, .button-copy {
-  width: 13em;
+.button-decrypt,
+.button-copy {
+  width: 20em;
   height: 3.5em;
   border: 1px solid #0a3871;
   border-radius: 1.2em;
@@ -118,7 +120,12 @@ li::before {
   color: #0a3871;
 }
 
-.img-bg-result-msg {
+.button-copy{
+  display: none;
+  max-width: 90%;
+}
+
+.img-container-result-msg {
   display: flex;
   align-items: center;
   height: 84%;
@@ -135,9 +142,10 @@ li::before {
 }
 
 .no-txt-info {
+  width: 100%;
   padding: 0 2em;
   text-align: center;
-  color: #343A40;
+  color: #343a40;
 }
 
 .no-txt-info h2 {
@@ -160,4 +168,121 @@ footer {
 footer a {
   text-decoration: none;
   color: #0a3871;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 10vh;
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+  }
+
+  main {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .container-insert-msg {
+    font-size: 1em;
+    height: auto;
+  }
+
+
+  .msg-text-result {
+    font-size: 1em;
+    height: 60%;
+  }
+
+  .result-msg{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  textarea {
+    height: 40vh;
+  }
+
+  .buttons {
+    padding: 0;
+    display: flex;
+  }
+
+  .button-crypt,
+  .button-decrypt,
+  .button-copy {
+    height: 5vh;
+    width: 40vw;
+  }
+
+  .container-result-msg {
+  width: 80%;
+  height: 20vh;
+  text-align: center;
+  position: absolute;
+  bottom: 5em;
+  margin: 5vh auto;
+  }
+  .advice {
+    text-align: left;
+    width: 80vw;
+  }
+  .img-container-result-msg {
+    text-align: center;
+    width: 100%;
+    height: 60%;
+  }
+  .img-bg-result-msg {    
+    width: 100%;
+    display: none;
+  }
+
+  .no-txt-info {
+    font-size: 1.5em;
+  }
+  
+  footer {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+
+  main {
+    height: 50%;
+  }
+
+  .msg-text-result {
+    
+    height: auto;
+  }
+}
+
+@media (max-height: 820px) {
+  body {
+    font-size:0.6em;
+  }
+
+  .title {
+    font-size: 4em;
+  }
+
+  header p, .logo {
+    font-size: 2em;
+  }
+  main {
+    height: 50%;
+  }
+
+  .container-result-msg {
+    font-size: 1.2em;
+  }
+
+  .msg-text-result {
+    
+    height: auto;
+  }
 }

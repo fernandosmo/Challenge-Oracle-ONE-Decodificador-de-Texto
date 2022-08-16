@@ -4,7 +4,7 @@ const buttonCrypt = document.querySelector('.button-crypt');
 const buttonDecrypt = document.querySelector('.button-decrypt');
 const buttonCopy = document.querySelector('.button-copy');
 const alertRules = document.querySelector('ul');
-const bgResult = document.querySelector('.img-bg-result-msg');
+const bgResult = document.querySelector('.img-container-result-msg');
 const textResult = document.querySelector('.msg-text-result');
 
 const insertVowels = ['e', 'i', 'a', 'o', 'u'];
@@ -52,6 +52,9 @@ function copy() {
 function filledResult() {
   bgResult.style.display = 'none';
   textResult.style.display = 'flex';
+  buttonCopy.style.display = 'inline';
+  buttonCopy.style.position = 'relative';  
+  // buttonCopy.style.bottom = '0';
   msgInsert.value = '';
 }
 
