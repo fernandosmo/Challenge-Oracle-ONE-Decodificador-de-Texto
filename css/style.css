@@ -84,11 +84,15 @@ textarea,
 .advice {
   height: 2em;
   padding:1vh 5vw;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 .advice ul {
   display: none;
+}
+
+li {
+display: flex;
 }
 
 li::before {
