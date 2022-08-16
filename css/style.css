@@ -277,21 +277,17 @@ footer a {
   header p, .logo {
     font-size: 2em;
   }
-  main {
-    height: 50%;
-  }
 
   .container-insert-msg {
-    height: 40vh;
+    height:auto;
   }
 
   .container-result-msg {
     font-size: 1.2em;
-    height: 18vh;
+    height: auto;
   }
 
   .msg-text-result {
-    
     height: auto;
   }
 

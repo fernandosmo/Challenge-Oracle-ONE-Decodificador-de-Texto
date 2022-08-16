@@ -53,8 +53,6 @@ function filledResult() {
   bgResult.style.display = 'none';
   textResult.style.display = 'flex';
   buttonCopy.style.display = 'inline';
-  buttonCopy.style.position = 'relative';  
-  // buttonCopy.style.bottom = '0';
   msgInsert.value = '';
 }
 
@@ -79,5 +77,6 @@ buttonCopy.addEventListener('click', function () {
     copy();
     bgResult.style.display = 'flex';
     textResult.style.display = 'none';
+    buttonCopy.style.display = 'none';
   }
 });
