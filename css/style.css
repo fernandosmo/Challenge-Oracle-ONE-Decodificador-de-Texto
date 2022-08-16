@@ -141,6 +141,10 @@ li::before {
   border: none;
 }
 
+.img-bg-result-msg {
+  width: 100%;
+}
+
 .no-txt-info {
   width: 100%;
   padding: 0 2em;
