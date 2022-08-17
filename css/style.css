@@ -22,6 +22,12 @@ header {
   justify-content: space-around;
   background-color: #d8dfe8;
 }
+
+a {
+  text-decoration: none;
+  color: #0a3871;
+}
+
 .logo {
   padding-top: 0.8em;
   width: 1em;
@@ -171,11 +177,6 @@ footer {
   text-align: center;
   width: 100%;
   background-color: #d8dfe8;
-}
-
-footer a {
-  text-decoration: none;
-  color: #0a3871;
 }
 
 @media (max-width: 768px) {
